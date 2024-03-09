@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dist/gutenberg.css">
+    <title>Title</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+      }
+
+      th {
+        color: #D5DDE5;
+        ;
+        background: #1b1e24;
+        border-bottom: 4px solid #9ea7af;
+        border-right: 1px solid #343a45;
+        font-size: 20px;
+        font-weight: 100;
+        padding: 24px;
+        text-align: left;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        vertical-align: middle;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> SENTIMENT ANALYSIS OF TODAY'S NEWS: THE GUARDIAN, THE MAIL AND THE METRO </h1>
+    <h2>
+      {{ date }}
+    </h2>
+    <div style="overflow-x: auto;">
+      <table>
+        <tr>
+          <th>Newspaper</th>
+          <th>Article Title Summary</th>
+          <th>Title Sentiment</th>
+          <th>Article Summary</th>
+          <th>Sentiment Analysis</th>
+        </tr>
+        {{ guardian }}
+        {{ metro }}
+        {{ mail }}
+      </table>
+    </div>
+  </body>
+</html>
