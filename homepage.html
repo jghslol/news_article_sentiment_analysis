@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analysis</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  </head>
+  <body>
+    <h1 style="text-align: center"> SENTIMENT ANALYSIS OF TODAY'S NEWS: THE GUARDIAN, THE MAIL AND THE METRO </h1>
+    <p style="text-align: center">
+      <br> This is a sentiment analysis of today's news of three major news sources: The Guardian, The Metro and the Daily Mail. The tool uses python web scraping library beautiful soup to scrape the article and title data for three of the top three stories from today's news on each site if there are three or less if there are less than three. If there are no articles at all, or you do not select any box, no data will be returned. It uses the natural language processing toolkit in python to do the sentiment analysis and to provide an article summary and a summary of the title. The tool is also written in PHP and HTML and it uses the Dompdf library to export the results to a PDF file for the user.
+    </p>
+    <p style="text-align: center"> Please check the boxes for the news sources that you would like analysis on and click submit and wait a few seconds to get a returned PDF document of the results. </p>
+    <form method="post" action="generate-pdf.php" style="text-align: center">
+      <br>
+      <br>
+      <label for="guardian">The Guardian</label>
+      <input type="checkbox" , name="guardian">
+      <label for="mail">The Daily Mail</label>
+      <input type="checkbox" , name="mail">
+      <label for="metro">The Metro</label>
+      <input type="checkbox" , name="metro">
+      <br>
+      <br>
+      <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
